@@ -48,7 +48,7 @@ app.get("/feedback", (req, res, next) => {
 });
 
 // app.use(cors({ origin: false }));
-app.listen(3001, () => {
+app.listen(80, () => {
   console.log("Server started on port 3001");
 });
 
