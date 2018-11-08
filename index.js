@@ -1,9 +1,12 @@
 
 var express = require("express");
 var cors = require("cors");
+var favicon = require('serve-favicon')
+var path = require('path')
 
 var app = express();
 
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -45,6 +48,10 @@ app.get("/leaders", (req, res, next) => {
 app.get("/feedback", (req, res, next) => {
   const returnValue = obj['feedback'];
   res.json(returnValue);
+});
+
+app.use(function(req, res){
+       res.json({});
 });
 
 // app.use(cors({ origin: false }));

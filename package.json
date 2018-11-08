@@ -19,6 +19,7 @@
   "homepage": "https://github.com/josiahsams/test-json-server#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "serve-favicon": "^2.5.0"
   }
 }
