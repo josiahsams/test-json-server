@@ -55,7 +55,10 @@ app.use(function(req, res){
 });
 
 // app.use(cors({ origin: false }));
-app.listen(80, () => {
-  console.log("Server started on port 3001");
+
+port=3001
+
+app.listen(process.env.PORT || port, () => {
+  console.log("Server started on port " + port);
 });
 
